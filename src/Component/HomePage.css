@@ -1,0 +1,108 @@
+.FirstPage {
+
+  height: 896px;
+  width: 414px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Set the position of the container to relative */
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+ 
+}
+
+#background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This will make the video cover the entire div */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2; /* Set the z-index to make it appear as a background */
+}
+
+.SubjectinFirstPage {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  position:absolute;
+ 
+  z-index: 10 !important;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Add position relative to the container */
+}
+
+
+
+
+
+.circle1, .circle2, .circle3 {
+  height: 80px;
+  width: 80px;
+  margin: 0.5rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1; 
+  animation-name: grow;
+  position: absolute;
+}
+
+.circle1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+
+.circle2{
+  height: 120px;
+  width: 120px;
+}
+
+.circle3 {
+  height: 150px;
+  width: 150px;
+  animation-iteration-count:infinite; 
+
+
+}
+
+@keyframes grow {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.text {
+  display: none; /* Hide the text by default */
+}
+
+.circle1 .text {
+  display: block; /* Display the text for circle1 */
+  animation: textAnimation 3s linear 0s 1 alternate;
+}
+
+@keyframes textAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

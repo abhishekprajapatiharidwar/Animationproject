@@ -1,0 +1,91 @@
+.SecondPage {
+  height: 896px;
+  width: 414px;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../assets/background.png");
+}
+
+.SecondpageContainer {
+  background-color: rgba(0, 0, 0, 0.719);
+  height: 50%;
+}
+
+.nav {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 0.711);
+}
+
+.textinterface {
+  color: white;
+  text-align: center;
+}
+
+.textinterface h2 {
+  font-size: 2rem;
+}
+
+.textinterface p {
+  font-size: 1.2rem;
+}
+
+.crosers img {
+  width: 90%;
+}
+.crosers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logos1 {
+  height: 3rem;
+  top: 2.5rem;
+
+  width: 3rem;
+  right: 14px;
+  border-radius: 1px solid white;
+  background-size: contain;
+  position: relative;
+  border-radius: 50%;
+  background-color: rgb(105, 105, 105);
+}
+
+#log1 {
+  background-image: url("../assets/lightprofile.png");
+  left: 1.6rem;
+}
+
+#log2 {
+  left: 2.8rem;
+  background-image: url("../assets/speakerprofile.png");
+}
+
+#log3 {
+  left: 3.5rem;
+  background-image: url("../assets/wallpapers.png");
+}
+
+#log4 {
+  left: 4.5rem;
+  background-image: url("../assets/steamprofile.png");
+}
+
+#log5 {
+  left: 5.5rem;
+  background-image: url("../assets/profiles.png");
+}
+
+#log6 {
+  left: 6.5rem;
+  background-image: url("../assets/aromaprofile.png");
+}
+.alllogos {
+  display: flex;
+}
